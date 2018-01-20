@@ -18,9 +18,9 @@ public class UIManager : MonoBehaviour
 
 	[Header("Constant Data")]
 	[Tooltip("Total number of cells in the minimap.")]
-	[SerializeField] private int m_numMinimapCells;
+	[SerializeField] private int m_numMinimapCells = 16;
 	[Tooltip("Length and width of the square minmap.")]
-	[SerializeField] private int m_minimapSize;
+	[SerializeField] private int m_minimapSize = 4;
 	[Tooltip("Coordinates [x, y] from bottom left indicating the player's current cell's minimap location.")]
 	[SerializeField] private int[] m_minimapCenter;
 	[Tooltip("Color of the player's current cell.")]
@@ -51,7 +51,6 @@ public class UIManager : MonoBehaviour
 			mc.transform.SetParent(m_minimap.transform);
 			mc.transform.localScale = new Vector3(1, 1, 1);
 			m_minimapCells[i / m_minimapSize, i % m_minimapSize] = mc;
-			Debug.Log (mc);
 		}
 	}
 
@@ -79,8 +78,8 @@ public class UIManager : MonoBehaviour
 
 	public void ClearMinimap()
 	{
+		Debug.Log ("Clearing mini map");
 		foreach (var mc in m_minimapCells) {
-			Debug.Log (mc);
 			mc.GetComponent<Image> ().color = Color.clear;
 		}
 	}
@@ -88,6 +87,7 @@ public class UIManager : MonoBehaviour
 	public void SetMinimapCellColor(int[] pos, bool isCurrent, bool isSaved)
 	{
 		var newColor = isCurrent ? m_playerCellColor : isSaved ? m_savedCellColor : m_cellColor;
+		//Debug.Log ("Setting color of: " + pos + " to: " + newColor);
 		m_minimapCells[pos[0], pos[1]].GetComponent<Image>().color = newColor;
 	}
 }

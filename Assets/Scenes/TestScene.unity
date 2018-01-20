@@ -725,7 +725,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1327,12 +1327,12 @@ MonoBehaviour:
   m_minimap: {fileID: 27667814}
   m_minimapCell: {fileID: 1100609304265848, guid: fa1f9c265620742d98d4353e02bb4db1,
     type: 2}
-  m_numMinimapCells: 4
+  m_numMinimapCells: 16
   m_minimapSize: 4
-  m_minimapCenter: 00000000000000000000000000000000
-  m_playerCellColor: {r: 0, g: 0, b: 0, a: 0}
-  m_cellColor: {r: 0, g: 0, b: 0, a: 0}
-  m_savedCellColor: {r: 0, g: 0, b: 0, a: 0}
+  m_minimapCenter: 0200000002000000
+  m_playerCellColor: {r: 0.862069, g: 1, b: 0, a: 1}
+  m_cellColor: {r: 1, g: 0, b: 0, a: 1}
+  m_savedCellColor: {r: 0, g: 0.006896496, b: 1, a: 1}
 --- !u!1 &1755638101 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1306819683366196, guid: 25efc2e320443ba41bd7c5557cfdd235,

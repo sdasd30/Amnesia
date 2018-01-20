@@ -46,14 +46,14 @@ public class PlayerControl : MonoBehaviour {
 			velocity.x = Mathf.SmoothDamp (velocity.x, targetVel.x, ref velocityXSmoothing, acceleration);
 			velocity.y = Mathf.SmoothDamp (velocity.y, targetVel.y, ref velocityYSmoothing, acceleration);
 			m_movement.Move (velocity, inp);
-			if (Input.GetButtonDown ("Fire1")) {
+			/*if (Input.GetButtonDown ("Fire1")) {
 				if (velocity.magnitude < 0.1f) {
 					m_fireControl.fire (lastMajorDir);
 				} else {
 					lastMajorDir = velocity.normalized;
 					m_fireControl.fire (velocity.normalized);
 				}
-			}
+			}*/
 			/*
 			if (Input.GetButtonDown("Fire2")) {
 				if (GetComponent<Attackable> ().pagesUsed < GetComponent<Attackable> ().maxPages) {

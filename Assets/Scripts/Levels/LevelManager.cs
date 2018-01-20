@@ -69,6 +69,7 @@ public class LevelManager : MonoBehaviour
 		var uim = UIManager.Get();
 		uim.ClearMinimap();
 
+		Debug.Log ("Updating minimap");
 		while (q.Count != 0)
 		{
 			var curr = q.Dequeue();
@@ -179,6 +180,7 @@ public class LevelManager : MonoBehaviour
 		//m_curr.RandomizeContents();
 		RandomizeRoom();
 		UpdateDoors();
+		UpdateMinimap ();
 	}
 	/*
 	public void saveRoom() {
