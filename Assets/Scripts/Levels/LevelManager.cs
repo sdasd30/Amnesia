@@ -176,7 +176,7 @@ public class LevelManager : MonoBehaviour
 	public void OnEnterDoor(DoorDir door)
 	{
 		m_curr = m_curr.GetNeighbor(door).level ?? m_curr;
-		// m_curr.RandomizeContents();
+		//m_curr.RandomizeContents();
 		RandomizeRoom();
 		UpdateDoors();
 	}

@@ -41,8 +41,8 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 2360183499
+  - name: Floor
+    uniqueID: 1998077109
     locked: 0
   - name: Enemies
     uniqueID: 1167212829
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: Door
     uniqueID: 3345239659
+    locked: 0
+  - name: Player
+    uniqueID: 2360183499
     locked: 0
