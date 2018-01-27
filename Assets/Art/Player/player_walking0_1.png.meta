@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 9ad8768f74fcaea41a15e5089b3c1e3c
-timeCreated: 1517066413
+guid: 88880ec1973893d4badab49b8ffc5c2d
+timeCreated: 1517066743
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: player_walking0_0_0
-    21300002: player_walking0_0_1
-    21300004: player_walking0_0_2
-    21300006: player_walking0_0_3
+    21300000: player_walking0_1_0
+    21300002: player_walking0_1_1
+    21300004: player_walking0_1_2
+    21300006: player_walking0_1_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -80,11 +80,21 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_walking0_0_0
+      name: player_walking0_1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -98,7 +108,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player_walking0_0_1
+      name: player_walking0_1_1
       rect:
         serializedVersion: 2
         x: 0
@@ -112,7 +122,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player_walking0_0_2
+      name: player_walking0_1_2
       rect:
         serializedVersion: 2
         x: 0
@@ -126,7 +136,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player_walking0_0_3
+      name: player_walking0_1_3
       rect:
         serializedVersion: 2
         x: 0

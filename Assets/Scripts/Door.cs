@@ -14,7 +14,7 @@ public class Door : MonoBehaviour {
 	}
 
 	internal void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.GetComponent<PlayerControl> ()) {
+		if (other.gameObject.GetComponent<Movement_Player> ()) {
 			Debug.Log ("collision detected with door");
 			LevelManager.Get ().OnEnterDoor (doorDirection);
 			if (doorDirection.Equals (DoorDir.RIGHT)) {
